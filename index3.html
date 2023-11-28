@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中国女性传统服饰</title>
+		<style type="text/css">
+			body{
+				margin:0 auto;
+				background-image:url("res/bg.jpg");
+				background-repeat:no-repeat;
+				background-size:100% 100%;
+				background-attachment: fixed;
+			}
+			.title{
+				padding-left: 60px;
+				font-size: 60px;
+				font-family: "FZShuTi";
+			}
+			.blank{
+				height:35px;
+			}
+			.blank2{
+				height:100px;
+			}
+			#clothPic{
+				height:500px;
+				display: flex;
+				justify-content: center;
+				opacity: 0.9;
+				flex:1;
+				justify-content: space-around;
+				align-items: center;
+			}
+			.clothPic1{
+				width:450px;
+				padding-left: 40px;
+			} 
+			.showCont{
+				padding:20px;
+				border:5px solid orangered;
+				border-radius: 10px;
+				width:660px;
+				height:500px;
+				overflow: auto;
+				font-size:25px;
+				font-family: "仿宋";
+				background-color: whitesmoke;
+			}
+			.hidCont{
+				display: none;
+			}
+			.arrow{
+				width:55px;
+				font-size: 40px;
+				font-weight:bolder;
+				color:orangered;
+			}
+			.arrow:hover{
+				font-size: 55px;
+				font-weight:bolder;
+				color:orangered;
+				transition:all 0.3s ease;
+			}
+			.backCt{
+				display: flex;
+				flex:1;
+				justify-content: space-between;
+				align-items: center;
+			}
+			a{
+				padding-left: 20px;
+				font-size: 40px;
+				font-family: "FZShuTi";
+				color: whitesmoke;
+			}
+			a:link{
+				text-decoration: none;
+			}
+			a:visited{
+				text-decoration: none;
+			}
+			</style> 
+			<script type="text/javascript">
+				document.getElementById("con2").style.display="none";
+				function changeCont(){
+					if(document.getElementById("con1").className=="showCont")
+					{
+						document.getElementById("con2").className="showCont";
+						document.getElementById("con1").className="hidCont";
+					}
+					else if(document.getElementById("con2").className=="showCont")
+					{
+						document.getElementById("con1").className="showCont";
+						document.getElementById("con2").className="hidCont";
+					}
+				}
+			</script>
+	</head>
+	
+	<body>
+    	<div class="blank"></div>
+    	<div class="title">春秋战国</div>
+    	<div class="blank"></div>
+			<div id="clothPic">
+					<img class="clothPic1" src="res/clothPic1.png" />
+					<div class="arrow" onclick="changeCont()">《</div>
+					<div class="showCont" id="con1"><h3>春秋战国时期的纺织品</h3>春秋战国时期纺织技术极大发展，民间手工作坊与官营作坊并存。
+						当时主要的纺织品为绢、绨、罗、锦。由于织绣技术的发展，纺织品纹样风格也较前代有了很大的变化。
+						商、周时的纹样彰显严峻狞厉的美学风貌，纹样结构一般为几何框架的中轴对称样式，纹样造型也较为抽象。
+						到了春秋战国时期纹样风格较为活泼生动，纹样结构由抽象转向写实，纹样造型也由直线转向自由的曲线。
+						纹样题材的选择一般也都具象征意义。</div>
+					<div class="hidCont" id="con2"><h3>春秋战国时期的服饰</h3>春秋战国时期最典型的服饰就是袍类服装。
+						当时最常见的袍服分别为直裾袍以及曲裾袍。袍主要有三种款式：第一种是后领下凹，前领为三角形交领，两袖下斜，
+						袖筒最宽处在腋下，小袖口，这种款式比较实用；第二种则两袖平直，宽袖口，短袖筒，后领上凸、交领，衣身较宽松，
+						这种款式一般穿在最外面；第三种为长袖，袖下呈弧形，衣身较为宽松，这种款式一直沿用到西汉。
+						作为直裾袍就是交领右衽，侧面垂直至下摆；曲裾袍则是衽侧面为三角形并绕至背后，腰间用丝带扎紧。
+						另外，此时还有一些与袍服相似的衣、夹衣。还有一种名为衣的服装是短袖对襟衣。
+						另有一种名为绵袴的不合裆的夹裤以及一种名为单裙的半裙。</div>
+					<div class="arrow" onclick="changeCont()">》</div>
+					
+			</div>
+			<div class="backCt">
+				<a href=https://fufukals.github.io/ex2/ target="_self">返回</a>
+				<div class="blank2"></div>
+			</div>
+			
+
+	</body>
+</html>
